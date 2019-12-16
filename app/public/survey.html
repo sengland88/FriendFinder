@@ -14,6 +14,8 @@
 <body>
     <h1>survey page is loaded</h1>
 
+    <div class="container">
+
     <form method="POST" role="form">
 
         <div class="form-group">
@@ -23,17 +25,37 @@
 
         <div class="form-group">
           <label for="role">Number</label>
-          <input type="text" class="form-control" id="number">
+          <input type="text" class="form-control" id="photo">
         </div>
 
         <div class="form-group">
           <label for="age">Email</label>
-          <input type="text" class="form-control" id="email">
+          <select class="custom-select custom-select-lg mb-3" id="q1">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree</option>
+          </select>
         </div>
 
         <div class="form-group">
           <label for="force-points">Username</label>
-          <input type="text" class="form-control" id="username">
+          <select class="custom-select custom-select-lg mb-3" id="q2">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="force-points">Username</label>
+          <select class="custom-select custom-select-lg mb-3" id="q3">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree</option>
+          </select>
         </div>
 
       </form>
@@ -43,24 +65,30 @@
       </div>
     </div>
 
+    </div>
+
     <script>
     
     $("#add-btn").on("click", function(event) {
     event.preventDefault();
     var newFriend = {
       name: $("#name").val().trim(),
-      number: $("#number").val().trim(),
-      email: $("#email").val().trim(),
-      unique: $("#username").val().trim()
+      photo: $("#photo").val().trim(),
+      scores: [
+        $("#q1").val(),
+        $("#q2").val(),
+        $("#q3").val()
+      ]
+
     };
 
     console.log(newFriend)
   
     $.post("/api/friends", newFriend)
-      .then(function(data) {
-        console.log("survey.html", data);
-        alert("Searching ...");
-      });
+      // .then(function(data) {
+      //   console.log("survey.html", data);
+      //   alert("Searching ...");
+      // });
   });
     
     </script>
