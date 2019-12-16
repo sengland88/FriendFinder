@@ -16,6 +16,8 @@
 
     <div class="container">
 
+      <h1>HEY!</h1>
+
     <form method="POST" role="form">
 
         <div class="form-group">
@@ -85,10 +87,10 @@
     console.log(newFriend)
   
     $.post("/api/friends", newFriend)
-      // .then(function(data) {
-      //   console.log("survey.html", data);
-      //   alert("Searching ...");
-      // });
+      .then(function(data) {
+        console.log("survey.html", data);
+        alert("Searching ...");
+      });
   });
     
     </script>

@@ -8,7 +8,8 @@ module.exports = function(app) {
 
     app.post("/api/friends", function(req, res) {
 
-        var newRes = req.body;      
+        var newRes = req.body
+
         newRes.routeName = newRes.name.replace(/\s+/g, "").toLowerCase();    
         friendsData.push(newRes);
       
