@@ -21,17 +21,17 @@
     <form method="POST" role="form">
 
         <div class="form-group">
-          <label for="name">Name</label>
+          <label>Name</label>
           <input type="text" class="form-control" id="name">
         </div>
 
         <div class="form-group">
-          <label for="role">Number</label>
+          <label>Photo</label>
           <input type="text" class="form-control" id="photo">
         </div>
 
         <div class="form-group">
-          <label for="age">Email</label>
+          <label>Sunsets are the best.</label>
           <select class="custom-select custom-select-lg mb-3" id="q1">
             <option selected>Open this select menu</option>
             <option value="1">Agree</option>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="form-group">
-          <label for="force-points">Username</label>
+          <label>The holiday season is overrated.</label>
           <select class="custom-select custom-select-lg mb-3" id="q2">
             <option selected>Open this select menu</option>
             <option value="1">Agree</option>
@@ -51,8 +51,79 @@
         </div>
 
         <div class="form-group">
-          <label for="force-points">Username</label>
+          <label>Warm weather over cold weather always.</label>
           <select class="custom-select custom-select-lg mb-3" id="q3">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Cooking is a hobby.</label>
+          <select class="custom-select custom-select-lg mb-3" id="q4">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Laugher keeps you young.</label>
+          <select class="custom-select custom-select-lg mb-3" id="q5">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Small talk is annoying.</label>
+          <select class="custom-select custom-select-lg mb-3" id="q6">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Coffee is nasty</label>
+          <select class="custom-select custom-select-lg mb-3" id="q7">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Experiences are better than things.</label>
+          <select class="custom-select custom-select-lg mb-3" id="q8">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <label>Exercise is fun!</label>
+          <select class="custom-select custom-select-lg mb-3" id="q9">
+            <option selected>Open this select menu</option>
+            <option value="1">Agree</option>
+            <option value="2">Neither</option>
+            <option value="3">Disagree/option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Video games are a waste of time.</label>
+          <select class="custom-select custom-select-lg mb-3" id="q10">
             <option selected>Open this select menu</option>
             <option value="1">Agree</option>
             <option value="2">Neither</option>
@@ -79,7 +150,14 @@
       scores: [
         $("#q1").val(),
         $("#q2").val(),
-        $("#q3").val()
+        $("#q3").val(),
+        $("#q4").val(),
+        $("#q5").val(),
+        $("#q6").val(),
+        $("#q7").val(),
+        $("#q8").val(),
+        $("#q9").val(),
+        $("#q10").val()
       ]
 
     };
