@@ -26,4 +26,17 @@ background-size: cover;
     padding-bottom: 150px;
 }
 
+@media only screen and (max-width: 990px) {
+    #jumbo {
+        width: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+
+  }
+
+
+
 
