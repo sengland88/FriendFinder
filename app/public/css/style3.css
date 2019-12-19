@@ -1,0 +1,29 @@
+body {
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+#parallax {
+background-image: url("../images/dating_8.jpg");
+
+height: 100%;
+
+background-attachment: fixed;
+background-position: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+  
+
+ #jumbo {
+    width: 40%;
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#theRow {
+    padding-bottom: 150px;
+}
+
+
