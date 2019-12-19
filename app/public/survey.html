@@ -4,176 +4,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey</title>
+    <title>Magnet — Survey</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style2.css" type="text/css">
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>survey page is loaded</h1>
+    
+
+    <div class="wrapper">
 
     <div class="container">
 
-      <h1>HEY!</h1>
+        <div class="jumbotron text-center" id="jumbo">
+            <h1 class="text-center theText">Magnet Survey</h1> 
+            <br>
+            <p>Fill out the quiz below to discover your match and then hit the submit button. Please answer all questions as honestly as possible to maximize your results.</p>
+          </div>       
 
-    <form method="POST" role="form" >
+      <form method="POST" role="form" >
 
-        <div class="form-group">
-          <label>Name</label>
-          <input type="text" class="form-control" id="name">
-        </div>
+      <div class="row">
+          <div class="col-sm">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+                <label>Photo (Please provide a URL)</label>
+                <input type="text" class="form-control" id="photo">
+            </div>
+          </div>
+      </div>
+        
 
-        <div class="form-group">
-          <label>Photo</label>
-          <input type="text" class="form-control" id="photo">
-        </div>
+      <div class="row">
+          <div class="col-sm">
+              <div class="form-group">
+                <label>Sunsets are the best.</label>
+                <select required class="custom-select custom-select-lg mb-3" id="q1">
+                  <option value="0"></option>
+                  <option value="1">Agree</option>
+                  <option value="2">Neither</option>
+                  <option value="3">Disagree</option>
+                </select>
+              </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+                <label>The holiday season is overrated.</label>
+                <select required class="custom-select custom-select-lg mb-3" id="q2">
+                  <option value="0"></option>
+                  <option value="1">Agree</option>
+                  <option value="2">Neither</option>
+                  <option value="3">Disagree</option>
+                </select>
+              </div>
+          </div>
+      </div>
 
-        <div class="form-group">
-          <label>Sunsets are the best.</label>
-          <select required class="custom-select custom-select-lg mb-3" id="q1">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
+      <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label>Warm weather over cold weather always.</label>
+              <select  required class="custom-select custom-select-lg mb-3" id="q3">
+                <option value="0"></option>
+                <option value="1">Agree</option>
+                <option value="2">Neither</option>
+                <option value="3">Disagree</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label>Cooking is a hobby.</label>
+              <select required class="custom-select custom-select-lg mb-3" id="q4">
+                <option value="0"></option>
+                <option value="1">Agree</option>
+                <option value="2">Neither</option>
+                <option value="3">Disagree</option>
+              </select>
+            </div>
+          </div>
+      </div>
 
-        <div class="form-group">
-          <label>The holiday season is overrated.</label>
-          <select required class="custom-select custom-select-lg mb-3" id="q2">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
+      <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label>Laugher keeps you young.</label>
+              <select required class="custom-select custom-select-lg mb-3" id="q5">
+                <option value="0"></option>
+                <option value="1">Agree</option>
+                <option value="2">Neither</option>
+                <option value="3">Disagree</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label>Small talk is annoying.</label>
+              <select required class="custom-select custom-select-lg mb-3" id="q6">
+                <option value="0"></option>
+                <option value="1">Agree</option>
+                <option value="2">Neither</option>
+                <option value="3">Disagree</option>
+              </select>
+            </div>
+          </div>
+      </div>
 
-        <div class="form-group">
-          <label>Warm weather over cold weather always.</label>
-          <select  required class="custom-select custom-select-lg mb-3" id="q3">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
+      <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label>Coffee is nasty</label>
+              <select required class="custom-select custom-select-lg mb-3" id="q7">
+                <option value="0"></option>
+                <option value="1">Agree</option>
+                <option value="2">Neither</option>
+                <option value="3">Disagree</option>
+              </select>
+              </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label>Experiences are better than things.</label>
+              <select required class="custom-select custom-select-lg mb-3" id="q8">
+                <option value="0"></option>
+                <option value="1">Agree</option>
+                <option value="2">Neither</option>
+                <option value="3">Disagree</option>
+              </select>
+              </div>
+          </div>
+      </div>
 
-        <div class="form-group">
-          <label>Cooking is a hobby.</label>
-          <select required class="custom-select custom-select-lg mb-3" id="q4">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Laugher keeps you young.</label>
-          <select required class="custom-select custom-select-lg mb-3" id="q5">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Small talk is annoying.</label>
-          <select required class="custom-select custom-select-lg mb-3" id="q6">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Coffee is nasty</label>
-          <select required class="custom-select custom-select-lg mb-3" id="q7">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Experiences are better than things.</label>
-          <select required class="custom-select custom-select-lg mb-3" id="q8">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
-
-
-        <div class="form-group">
-          <label>Exercise is fun!</label>
-          <select required class="custom-select custom-select-lg mb-3" id="q9">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Video games are a waste of time.</label>
-          <select required class="custom-select custom-select-lg mb-3" id="q10">
-            <option value="0"></option>
-            <option value="1">Agree</option>
-            <option value="2">Neither</option>
-            <option value="3">Disagree</option>
-          </select>
-        </div>
+      <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label>Exercise is fun!</label>
+              <select required class="custom-select custom-select-lg mb-3" id="q9">
+                <option value="0"></option>
+                <option value="1">Agree</option>
+                <option value="2">Neither</option>
+                <option value="3">Disagree</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label>Video games are a waste of time.</label>
+              <select required class="custom-select custom-select-lg mb-3" id="q10">
+                <option value="0"></option>
+                <option value="1">Agree</option>
+                <option value="2">Neither</option>
+                <option value="3">Disagree</option>
+              </select>
+            </div>
+          </div>
+      </div>
 
       </form>
       <br>
-      <div class="text-right">
+      <div class="text-center pb-5">
         <button type="submit" class="btn btn-primary btn-md" id="add-btn"></span> Submit Reservation</button>
       </div>
     </div>
-
     </div>
-
-    <script>
-    
-    $("#add-btn").on("click", function(event) {
-    event.preventDefault();
-    
-          var newFriend = {
-            name: $("#name").val().trim(),
-            photo: $("#photo").val().trim(),
-            scores: [
-              $("#q1").val(),
-              $("#q2").val(),
-              $("#q3").val(),
-              $("#q4").val(),
-              $("#q5").val(),
-              $("#q6").val(),
-              $("#q7").val(),
-              $("#q8").val(),
-              $("#q9").val(),
-              $("#q10").val()
-              ]
-            };
-
-            if (newFriend.scores.includes("0")) {
-              alert("Please fill in all answers")
-              return
-            }
-        
-          $.post("/api/friends", newFriend)
-            .then(function(data) {
-              console.log("survey.html", data);
-            });
-  
-  });
-    
-    </script>
+    <script src="js/app.js"></script>
 </body>
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">You matched with <span class="theMatch"></span></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img id="thePhoto" src="" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </html>

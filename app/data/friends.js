@@ -2,48 +2,48 @@
 
 var friendsArray = [
     {
-      name: "colton",
-      photo: "photo",
+      name: "Liam",
+      photo: "../images/daters/liam.jpg",
       scores: [3, 2, 2, 2, 1, 3, 3, 2, 2, 1]
     },
     {
-      name: "zack",
-      photo: "photo",
+      name: "Zac",
+      photo: "../images/daters/zack.jpg",
       scores: [3, 3, 3, 2, 3, 3, 1, 2, 2, 1]
     },
     {
-      name: "cole",
-      photo: "photo",
+      name: "Niall",
+      photo: "../images/daters/niall.jpg",
       scores: [2, 1, 1, 1, 1, 3, 1, 2, 2, 1]
     },
     {
-      name: "alex",
-      photo: "photo",
+      name: "Alex",
+      photo: "../images/daters/alex.jpg",
       scores: [2, 2, 1, 2, 2, 1, 3, 2, 1, 1]
     },
     {
-      name: "dean",
-      photo: "photo",
+      name: "Tom",
+      photo: "../images/daters/tom.jpg",
       scores: [3, 2, 1, 2, 1, 2, 3, 2, 2, 1]
     },
     {
-      name: "nick",
-      photo: "photo",
+      name: "Nick",
+      photo: "../images/daters/nick.jpg",
       scores: [1, 2, 2, 1, 2, 3, 1, 2, 1, 1]
     },
     {
-      name: "ryan",
-      photo: "photo",
+      name: "Ryan",
+      photo: "../images/daters/ryan.jpg",
       scores: [1, 1, 2, 3, 2, 3, 3, 1, 2, 1]
     },
     {
-      name: "matt",
-      photo: "photo",
+      name: "Dave",
+      photo: "../images/daters/dave.jpg",
       scores: [3, 1, 1, 3, 1, 2, 3, 1, 2, 2]
     },
     {
-      name: "justin",
-      photo: "photo",
+      name: "Justin",
+      photo: "../images/daters/justin.jpg",
       scores: [2, 1, 2, 3, 1, 3, 1, 3, 2, 1]
     }
   ]

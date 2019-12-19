@@ -1,0 +1,31 @@
+body {
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+
+
+label {
+    font-weight: bolder;
+    font
+}
+
+h1 {
+    color: blue;
+}
+
+#jumbo {
+    background-color: darkgrey;
+}
+
+.wrapper {
+  background-image: url("../images/dating_6.jpg");
+
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
