@@ -27,3 +27,7 @@ Then, when the user submits their survey, the answers are compiled (as well as t
 Please note that the form does contain validation. No field can be left blank, and the survey questions cannot contain a value of "0" or it will alert user to complete all fields. 
 
 I also utilize a map method to convert the strings into integers, as all of the values are technically strings.
+
+<h2>URL</h2>
+
+http://bit.ly/2MZeHCE
